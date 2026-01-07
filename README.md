@@ -102,6 +102,30 @@ cd /root/ansible
 - Java(포터블): `java-1.8.0-openjdk-portable-1.8.0.452.b09-1.portable.jdk.el.x86_64.tar.xz`
 - K8s 바이너리: `kube-v1.30.12/`
 
+## 컴포넌트 버전 (번들 기준)
+
+| Component | Version / Source |
+| --- | --- |
+| Kubernetes | `v1.30.12` |
+| containerd | `1.7.22` |
+| runc | `1.1.12` |
+| crictl | `1.30.1` |
+| nerdctl | `2.0.2` |
+| CNI plugins | `v1.3.0` |
+| etcd | `v3.5.15` |
+| Helm | `v3.12.3` |
+| Cilium | `1.16.1` (chart appVersion) |
+| Ingress NGINX | `4.11.2` (chart) |
+| NFS CSI | `v4.9.0` (chart) |
+| Istio | `1.22.3` (base/istiod/gateway charts) |
+| Kiali | `1.82.0` (chart) |
+| Velero | `9.0.0` (chart) |
+| Nexus | `3.63.0` (bundle) |
+| Java (portable) | `1.8.0.452` |
+
+참고:
+- kube-prometheus-stack, FluxCD, VPA 등은 `development-package/`의 번들에 포함되어 있으며, 세부 버전은 해당 디렉토리/매니페스트에서 확인 가능합니다.
+
 ## 선택 실행
 
 - 특정 phase 실행:
