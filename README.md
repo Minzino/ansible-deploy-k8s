@@ -51,8 +51,8 @@
 
 ## 포함 파일
 
-- `ansible-offline-20260107.tar.gz.part-*`: 분할된 오프라인 번들
-- `ansible-offline-20260107.tar.gz.sha256`: 번들 무결성 체크섬
+- `bundle/ansible-offline-20260107.tar.gz.part-*`: 분할된 오프라인 번들
+- `bundle/ansible-offline-20260107.tar.gz.sha256`: 번들 무결성 체크섬
 - `ansible-offline-restore.sh`: 복원/검증/압축 해제 스크립트
 
 ## 복원 및 압축 해제
@@ -65,8 +65,8 @@ chmod +x ansible-offline-restore.sh
 수동 복원:
 
 ```bash
-cat ansible-offline-20260107.tar.gz.part-* > ansible-offline-20260107.tar.gz
-sha256sum -c ansible-offline-20260107.tar.gz.sha256
+cat bundle/ansible-offline-20260107.tar.gz.part-* > ansible-offline-20260107.tar.gz
+sha256sum -c bundle/ansible-offline-20260107.tar.gz.sha256
 tar -xzf ansible-offline-20260107.tar.gz
 ```
 
